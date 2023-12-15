@@ -1,133 +1,197 @@
 html{
-    background: linear-gradient(135deg, #0d0d0d 0%, #1d1d1d 25%, #222222 40%, #2e2e31 60%, #28282b 70%, #282727 85%, #0d0d0d 100%);
-    background-image: url(https://images.unsplash.com/photo-1652736719079-b12b89b8ffa0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-image: url(wallpaper-black-wood2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
+  background: linear-gradient(135deg, #282828 45%, #4c4c4c 65%);
+  background-image: url(https://images.unsplash.com/photo-1652736719079-b12b89b8ffa0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(wallpaper-black-wood2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
 }
-body *:hover{
-    cursor: url(navigator2-angle.png), auto;
+body:hover{
+  cursor: url(icons8-select-cursor-24.png), auto;
+}
+button:hover, a:hover{
+  cursor: url(icons8-selectLINK-cursor-24.png), auto;
 }
 ::-webkit-scrollbar{
-    display: none;
+  display: none;
 }
-.langLink{
-    position: absolute;
-    top: 20px;
-    right: 40px;
-
+.topping{
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5%;
 }
-.langLink a{
-    text-decoration: none;
-    color: #dfdfdf;
-    padding: 5px;
-    border-radius: 6px;
-}
-.langLink a:hover{
-    box-shadow: 2.5px 2.5px 4px #080808, -2.5px -2.5px 4px #7d7d7d;
-transition-duration: .4s;
-background-color: #1d1d1d4e;
+.brandName{
+  font-size: larger;
+  padding: 0 30px;
+  text-decoration: none;
+  color: #dfdfdf;
 }
 
 body {
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    backdrop-filter: brightness(.4) ;
-    display: flex;
-    font-family: 'Gayathri', sans-serif;
-    color: #dfdfdf;
-    font-family: 'Ysabeau SC', sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: brightness(.35) ;
+  display: flex;
+  color: #dfdfdf;
+  font-family: 'Ysabeau SC', sans-serif;
+  scroll-behavior: smooth;
 }
-/* index page */
+
+
 footer {
-    position: fixed;
-    left: 0; bottom: 0;
-    width: 100%;
-    text-align: right;
-    font-size: small;
+  position: fixed;
+  left: 0; bottom: 0;
+  width: 98%;
+  text-align: right;
+  font-size: 14px;
 }
 nav{
-    position: fixed;
-    bottom: 6%;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  position: fixed;
+  bottom: 7%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-.contactMe{
-    width: 100%;
-    position: fixed;
-    bottom: .5%;
-    text-align: center;
-    font-size: larger;
-}
-.contact a{
-    margin: 0 40px 0 40px;
-    padding: 7px;
-    border-radius: 18px;
-    height: 50px;
+nav a{
+  margin: 0 40px 0 40px;
+  padding: 7px;
+  border-radius: 18px;
+  height: 40px;
 }
 main{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
 }
 .upperside{
-    margin-top: 5%;
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+  margin-top: 5%;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 .upperside a{
-    border-radius: 50%;
+  border-radius: 50%;
 }
 .avatar{
-    border: 4px solid #dfdfdf;
-    border-radius: 50%;
-    width: 500px;
-    box-shadow: 7px 7px 15px #0c0c0c;
+  border: 4px solid #dfdfdf;
+  border-radius: 50%;
+  width: 500px;
+  box-shadow: 0 7px 15px #0c0c0c;
 }
-.contact a:hover{
-    transition-duration: .4s;
-    box-shadow: 2.5px 2.5px 4px #080808, -2.5px -2.5px 4px #7d7d7d;
-    background-color: #1d1d1d4e;
+
+nav a:hover{
+  transition-duration: .4s;
+  filter: drop-shadow(0 0 5px #dfdfdf);
 }
-.texti{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-shadow: 4px 4px 7px #000000, -2px -2px 5px #7c7c7c9e;
-    width: 40%;
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-shadow: 4px 4px 7px #000000;
+  width: 40%;
 }
 h1{
-    font-size: 70px;
-    margin-bottom: 0;
+  font-size: 70px;
+  margin-bottom: 0;
 }
 .welcommen{
-    font-size: 45px;
+  text-align: start;
+  font-size: 44px;
 }
-.linkes button{
-    font-family: 'Ysabeau SC', sans-serif;
-    font-size: 30px;
-    text-decoration: none;
-    color: #fff;
-    background-color: inherit;
-    width: 350px;
-    padding: 20px;
-    margin: 80px 20px 0 20px;
-    border-radius: 25px;
-    border: unset;
+.aboutMe{
+  text-align: start;
+  font-size: 27px;
+  margin-top: 0;
 }
-.linkes button:hover{
-    box-shadow: 2.5px 2.5px 4px #080808, -2.5px -2.5px 4px #7d7d7d;
-    transition-duration: .4s;
-    background-color: #1d1d1d4e;
+.linkes{
+  margin-top: 50px;
+}
+.linkes a{
+  font-size: 50px;
+  text-decoration: none;
+  color: #dfdfdf;
+  background-color: inherit;
+  padding: 10px;
+  border: unset;
+}
+.linkes a:hover{
+  text-shadow: 0 0 7px #dfdfdf;
+  transition-duration: .4s;
 }
 
 
+@media all and (max-width: 1200px){
+  .avatar{
+    width: 300px;
+  }
+  .linkes{
+    margin-top: 10%;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  .welcommen{
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 860px){
+  h1{
+    font-size: 2rem;
+  }
+  .welcommen{
+    font-size: 1.5rem;
+  }
+  .linkes a{
+    font-size: 2rem;
+  }
+  .linkes{
+    width: 50%;
+  }
+  .avatar{
+    width: 200px;
+  }
+  main{
+    margin-top: 20%;
+    align-items: center;
+  }
+  nav{
+    bottom: 8%;
+  }
+  nav a{
+    margin: 0 20px 0 20px;
+  }
+}
+@media all and (max-width: 530px){
+  .avatar{
+    width: 100px;
+  }
+}
+@media all and (max-width: 490px){
+  .upperside{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .heading{
+    width: 80%;
+    align-items: center;
+  }
+  .linkes a{
+    font-size: 1.5rem;
+  }
+  nav a{
+    margin: 0 5px 0 5px;
+  }
+  nav a img{
+    width: 30px;
+    height: 30px;
+  }
+}
